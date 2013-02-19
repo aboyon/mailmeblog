@@ -1,0 +1,6 @@
+mail:
+  server: mail.gmail.com
+  port: 995
+  ssl: true
+  username: <username>
+  password: <password>
