@@ -2,3 +2,4 @@ config/config.yml
 .rvmrc
 Gemfile.lock
 emails/eml/*
+emails/html/*

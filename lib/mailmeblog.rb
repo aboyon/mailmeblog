@@ -25,9 +25,10 @@ module Mailmeblog
       :enable_ssl => config['mail']['ssl']
   end
   
-  unless File.directory?("#{Mailmeblog.config['store']['eml']}")
-    FileUtils.mkdir_p "#{config['store']['eml']}"
+  Mailmeblog.config['store'].each do |destination|
+    unless File.directory?("#{destination.last}")
+      FileUtils.mkdir_p "#{destination.last}"
+    end
   end
-
 
 end
