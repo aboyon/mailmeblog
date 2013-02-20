@@ -4,3 +4,6 @@ mail:
   ssl: true
   username: <username>
   password: <password>
+
+store:
+  eml: "<<your_path>>"
