@@ -2,6 +2,7 @@ module Mailmeblog
   
   require 'mail'
   require 'fileutils'
+  require 'htmlentities'
 
   Dir["lib/helpers/*.rb", "lib/mailmeblog/*.rb"].each { |file| 
     require "#{Dir.pwd}/#{file}"

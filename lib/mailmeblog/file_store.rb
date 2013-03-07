@@ -25,12 +25,12 @@ module Mailmeblog
       def convert_to_entries
         save_emails.each do |mail|
           filename = "#{@config['store']['html']}/#{Mailmeblog::sluglify(mail.subject)}.html"
-          html = "<h3>#{mail.subject}</h3>"
+          html = "<h3>#{Mailmeblog::convert_encoding(mail.subject)}</h3>"
           html.concat("\n")
           mail.body.decoded.split("\n").each do |paragraph|
             unless paragraph.blank?
               html.concat("\n")
-              html.concat("<p>#{paragraph}</p>")
+              html.concat("<p>#{Mailmeblog::convert_encoding(paragraph)}</p>")
               html.concat("\n")
             end
           end
