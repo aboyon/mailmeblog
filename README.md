@@ -39,4 +39,4 @@ ruby checkmail.rb
 
 # License
 
-Please [see licence file](https://github.com/aboyon/mailmeblog/blob/master/LICENCE.md) for further reading.
+Please [see licence file](https://github.com/aboyon/mailmeblog/blob/master/LICENCE) for further reading.
